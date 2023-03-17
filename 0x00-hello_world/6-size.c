@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - entry point
-*
-* description: program that prints the size of various types program that prints the size of various types
-*
-* Return: Always 0 (Success) 
+ * main - Entry point
+ *
+ * Description: A C progam that prints with printf function.
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)

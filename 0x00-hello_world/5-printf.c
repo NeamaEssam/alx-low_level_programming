@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
-*
-*description: program that use printf function
-*
+ * main - Entry point
+ *
+ * Description: A C progam that prints with printf function.
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)
