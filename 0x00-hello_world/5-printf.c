@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-
+/**
+*
+*description: program that use printf function
+*
+*/
 
 int main(void)
 {
