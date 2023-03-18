@@ -10,23 +10,16 @@
 
 int main(void)
 {
-	int i, j;
+	int j;
 
-	i = 0;
 	j = 0;
 
-	while (i < 10)
-	{
-		while (j < 10)
+	while (j < 10)
 		{
-			putchar('0' + i);
 			putchar('0' + j);
 			putchar(',');
 			putchar(' ');
 			j++;
 		}
-		j = 0;
-		i++;
-	}
 	return (0);
 }
