@@ -15,15 +15,16 @@ int main(void)
 	j = 0;
 	while (j < 10)
 	{
-			if (j == 9)
-			{
-				putchar('0' + j);
-			}
+		putchar(j + 48);
 
-			putchar('0' + j);
+		if (j != 9)
+		{
 			putchar(',');
 			putchar(' ');
-			j++;
+		}
+
+		j++;
 	}
+	putchar('\n');
 	return (0);
 }
