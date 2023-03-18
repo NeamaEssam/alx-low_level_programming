@@ -20,15 +20,15 @@ int main(void)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
-			if (i != 9 && j != 9)
+			if ((i != 9) && (j != 9))
 			{
 				putchar(',');
 				putchar(' ');
 			}
 			j++;
 		}
-		j = 0;
 		i++;
+		j = i + 1;
 	}
 	putchar('\n');
 	return (0);
