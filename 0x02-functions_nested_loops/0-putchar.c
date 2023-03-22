@@ -12,8 +12,9 @@ int main(void)
 {
 	char a[] = "_putchar";
 	char c;
+	int b;
 
-	for (int b = 0; b < 8; b++)
+	for (b = 0; b < 8; b++)
 	{
 		c = a[b];
 		_putchar(c);
