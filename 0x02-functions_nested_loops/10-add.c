@@ -16,10 +16,5 @@ int add(int a, int b)
 	int sum;
 
 	sum = a + b;
-	if (sum > 9)
-		_putchar((sum / 10) + 48);
-
-	_putchar((sum % 10) + 48);
-	_putchar('\n');
 	return (sum);
 }
