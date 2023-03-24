@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<math.h>
 
 /**
 * main - main function
@@ -7,26 +8,17 @@
 
 int main(void)
 {
-	long long int n;
+	int c;
+	long num = 612852475143;
 
-	n = 612852475143;
-	long int div = 2, ans = 0, maxFact;
-
-	while (n != 0)
+	for (i = (int) sqrt(num); i > 2; i++)
 	{
-		if (n % div != 0)
-			div = div + 1;
-		else
+		if (num % i == 0)
 		{
-			maxFact = n;
-			n = n / div;
-			if (n == 1)
-			{
-				printf("%d\n", maxFact);
-				ans = 1;
-				break;
-			}
+			printf("%d\n", i);
+			break;
 		}
 	}
+
 	return (0);
 }
