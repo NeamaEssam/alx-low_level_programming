@@ -13,7 +13,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		n = n * -1;
+		n = n * (-1);
 		_putchar('-');
 	}
 	temp = n;
@@ -31,7 +31,7 @@ void print_number(int n)
 	{
 		if (m == 1)
 		{
-			_putchar(num % 10 + '0');
+			_putchar(temp % 10 + '0');
 			temp = -1;
 		}
 		else
