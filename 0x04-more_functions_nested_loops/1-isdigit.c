@@ -11,18 +11,18 @@ int _isdigit(int c)
 {
 	if (c > 47 && c < 58)
 	{
-		_putchar(c);
-		_putchar(':');
-		_putchar(' ');
-		_putchar('1');
+		/*_putchar(c);*/
+		/*_putchar(':');*/
+		/*_putchar(' ');*/
+		/*_putchar('1');*/
 		return (1);
 	}
 	else
 	{
-		_putchar(c);
-		_putchar(':');
-		_putchar(' ');
-		_putchar('0');
+		/*_putchar(c);*/
+		/*_putchar(':');*/
+		/*_putchar(' ');*/
+		/*_putchar('0');*/
 		return (0);
 	}
 }
