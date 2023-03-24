@@ -11,8 +11,8 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (!(i % 3))
-			printf("Fizz ");
+		if (!(i % 15))
+			printf("FizzBuzz ");
 		else if (!(i % 5))
 		{
 			if (i == 100)
@@ -20,8 +20,8 @@ int main(void)
 			else
 				printf("Buzz ");
 		}
-		else if (!(i % 15))
-			printf("FizzBuzz ");
+		else if (!(i % 3))
+			printf("Fizz ");
 		else
 			printf("%d ", i);
 	}
