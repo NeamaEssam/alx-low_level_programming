@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 /**
-* _isupper -   prints the n times table, starting with 0.
+* _isupper - checks if c if upper
 * @c: input
 * Return: 1 if c is upper, 0 otherwise
 */
