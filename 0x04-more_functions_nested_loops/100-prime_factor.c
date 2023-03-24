@@ -11,11 +11,11 @@ int main(void)
 	int c;
 	long num = 612852475143;
 
-	for (i = (int) sqrt(num); i > 2; i++)
+	for (c = (int) sqrt(num); c > 2; c++)
 	{
-		if (num % i == 0)
+		if (num % c == 0)
 		{
-			printf("%d\n", i);
+			printf("%d\n", c);
 			break;
 		}
 	}
