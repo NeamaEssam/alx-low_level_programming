@@ -11,9 +11,9 @@ void print_number(int n)
 {
 	int m, i, temp;
 
-	if (temp < 0)
+	if (n < 0)
 	{
-		temp = temp * -1;
+		n = n * -1;
 		_putchar('-');
 	}
 	temp = n;
