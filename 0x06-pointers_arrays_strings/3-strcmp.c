@@ -21,14 +21,14 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0; i < n1; i++)
 	{
-		if (s1[i] == s2[i])
+		if ((int)s1[i] == (int)s2[i])
 			;
-		else if (s1[i] < s2[i])
+		else if ((int)s1[i] < (int)s2[i])
 		{
 			f = -1;
 			break;
 		}
-		else if (s1[i] > s2[i])
+		else if ((int)s1[i] > (int)s2[i])
 		{
 			f = 1;
 			break;
