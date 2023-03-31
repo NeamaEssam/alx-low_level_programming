@@ -35,7 +35,7 @@ int separator(char c)
 * Return: string
 */
 
-char *cap_string(char *a)
+char *cap_string(char * a)
 {
 	char *p = a;
 	int s = 1;
