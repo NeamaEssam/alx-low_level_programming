@@ -2,17 +2,6 @@
 #include<stdio.h>
 
 /**
-* islower - checks if lowercase
-* @b: input
-* Return: 1 if true, 0 if false
-*/
-
-int islower(char b)
-{
-	return (b >= 97 && b <= 122);
-}
-
-/**
 * separator - checks if separator char
 * @c: input
 * Return: 1 if true, 0 if false
@@ -23,7 +12,7 @@ int separator(char c)
 	int i;
 	char s[] = " \t\n,.!?\"(){}";
 
-	for (i = 0; i < 12; i++)
+	for (i = 0; i <= 11; i++)
 		if (c == s[i])
 			return (1);
 	return (0);
@@ -35,23 +24,21 @@ int separator(char c)
 * Return: string
 */
 
-char *cap_string(char * a)
+char *cap_string(char *a)
 {
-	char *p = a;
-	int s = 1;
+	int i, n;
 
-	while (*a)
+	n = 0;
+	while (a[n])
+		n++;
+
+	if (a[0] >= 97 && a[0] <= 122)
+		a[0] -= 32;
+
+	for (i = 1; i < n; i++)
 	{
-		if (separator(*a))
-			s = 1;
-		else if (islower(*a) && separator)
-		{
-			*a -= 32;
-			s = 0;
-		}
-		else
-			s = 0;
-		a++;
+		if (separator(a[i]) && (a[i + 1] >= 97 && a[i + 1] <= 122))
+			a[i + 1] -= 32;
 	}
-	return (p);
+	return (a);
 }
