@@ -21,7 +21,7 @@ int islower(char b)
 int separator(char c)
 {
 	int i;
-	char s[] = "\t\n,.!?\"(){}";
+	char s[] = " \t\n,.!?\"(){}";
 
 	for (i = 0; i < 12; i++)
 		if (c == s[i])
