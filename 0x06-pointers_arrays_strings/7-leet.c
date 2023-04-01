@@ -9,6 +9,7 @@
 char *leet(char *a)
 {
 	int i;
+	char *first = a;
 	char letter[] = "aeotl";
 	char encoder[] = "43071";
 
@@ -21,5 +22,5 @@ char *leet(char *a)
 		}
 		a++;
 	}
-	return (a);
+	return (first);
 }
