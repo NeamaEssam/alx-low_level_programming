@@ -8,24 +8,18 @@
 
 char *leet(char *a)
 {
-	int i, n;
+	int i;
+	char letter[] = "aeotl";
+	char encoder[] = "43071";
 
-	n = 0;
-	while (a[n])
-		n++;
-
-	for (i = 0; i < n; i++)
+	while (*a)
 	{
-		if (a[i] == 'a' || a[i] == 'A')
-			a[i] = '4';
-		else if (a[i] == 'e' || a[i] == 'E')
-			a[i] = '3';
-		else if (a[i] == 'o' || a[i] == 'O')
-			a[i] = '0';
-		else if (a[i] == 't' || a[i] == 'T')
-			a[i] = '7';
-		else if (a[i] == 'l' || a[i] == 'L')
-			a[i] = '1';
+		for (i = 0; i < 5; i++)
+		{
+			if (*a == letter[i] || *a == (letter[i] - 32))
+				*a = encoder[i];
+		}
+		a++;
 	}
 	return (a);
 }
