@@ -1,6 +1,4 @@
 #include"main.h"
-#include<stdio.h>
-
 
 /**
 * _memset - fills the first n bytes of the memory area
