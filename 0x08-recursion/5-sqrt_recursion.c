@@ -19,7 +19,7 @@ int square(int n, int r)
 	}
 	else
 	{
-		return(-1);
+		return (-1);
 	}
 }
 
@@ -31,5 +31,5 @@ int square(int n, int r)
 
 int _sqrt_recursion(int n)
 {
-	return (square(n, 1));	
+	return (square(n, 1));
 }
