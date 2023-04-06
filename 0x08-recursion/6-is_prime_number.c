@@ -7,7 +7,7 @@
 * Return: if n < 0, return -1
 */
 
-int prime(n, f)
+int prime(int n, int f)
 {
 	if (f >= n && n > 1)
 		return (1);
