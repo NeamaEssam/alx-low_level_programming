@@ -1,25 +1,13 @@
-#include "main.h"
+#include"main.h"
+#include<unistd.h>
 
 /**
- * main - Entry point
- *
- * Description: print _putchar
- *
- * Return: Always 0 (Success)
+* _putchar - prints a character
+* @c: input
+* Return: on success 1.
 */
 
-int main(void)
+int _putchar(char c)
 {
-	char a[] = "_putchar";
-	char c;
-	int b;
-
-	for (b = 0; b < 8; b++)
-	{
-		c = a[b];
-		_putchar(c);
-	}
-	_putchar('\n');
-	return (0);
-
+	return (write(1, &c, 1));
 }
