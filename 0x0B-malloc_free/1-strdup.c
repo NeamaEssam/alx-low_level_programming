@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	for (i = 0; i < sizeof(str); i++)
+	for (i = 0; i < (int)sizeof(str); i++)
 		a[i] = str [i];
 
 	return (a);
