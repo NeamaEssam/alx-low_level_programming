@@ -17,24 +17,24 @@ char *str_concat(char *s1, char *s2)
 		s1 = '\0';
 	if (s2 == NULL)
 		s2 = '\0';
-	n1 = 0;
+	n1 = 1;
 	while (s1[n1])
 		n1++;
 
-	n2 = 0;
+	n2 = 1;
 	while (s2[n2])
 		n2++;
 
-	a = malloc(n1 + n2 + 1);
+	a = malloc(n1 + n2 - 1);
 	if (a == 0)
 	{
 		return ('\0');
 	}
-	for (i = 0; i < n1; i++)
+	for (i = 0; i <= n1; i++)
 	{
 		a[i] = s1[i];
 	}
-	for (; i < (n1 + n2); i++)
+	for (; i <= (n1 + n2 - 1); i++)
 	{
 		a[i] = s2[i - n1];
 	}
