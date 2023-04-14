@@ -13,10 +13,6 @@ char *str_concat(char *s1, char *s2)
 	char *a;
 	unsigned int i, n1, n2;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return ('\0');
-	}
 	n1 = 0;
 	while (s1[n1])
 		n1++;
@@ -34,9 +30,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		a[i] = s1[i];
 	}
-	for (; i < n1 + n2; i++)
+	for (; i < (n1 + n2); i++)
 	{
-		a[i] = s2[i];
+		a[i] = s2[i - n1];
 	}
 
 	return (a);
