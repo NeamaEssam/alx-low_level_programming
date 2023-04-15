@@ -11,7 +11,7 @@
 int *array_range(int min, int max)
 {
 	char *a;
-	unsigned int i, size;
+	unsigned int i;
 
 	if (min > max)
 	{
