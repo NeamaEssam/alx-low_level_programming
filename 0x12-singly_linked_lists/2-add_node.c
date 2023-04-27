@@ -23,9 +23,10 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 		}
 
-		new_head->next = *head;
-		*head = new_head;
-		return (new_head);
+		new_head->l = _srtlen(new_head->s);
 	}
+	new_head->next = *head;
+	*head = new_head;
+	return (new_head);
 
 }
