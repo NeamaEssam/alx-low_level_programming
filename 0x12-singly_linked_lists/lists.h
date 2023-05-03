@@ -8,16 +8,16 @@
 
 /**
 * struct list_s - linked list
-* @s: string
-* @l: length of string
+* @str: string
+* @len: length of string
 * @next: pointer to the next node
 * Description: linked list node structure
 */
 
 typedef struct list_s
 {
-	char *s;
-	unsigned int l;
+	char *str;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 
