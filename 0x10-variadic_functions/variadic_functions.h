@@ -6,7 +6,7 @@
 
 
 /**
- * frmt - struct frmt
+ * struct frmt - struct frmt
  * @test: pointer to input for test
  * @printer: pointer to function
  */
